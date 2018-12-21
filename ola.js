@@ -75,7 +75,7 @@ module.exports = function(RED) {
         function fadeToValue(channel, new_value, transition_time) {
             var old_values = node.addresses;
 
-            var steps = transition_time / 100;
+            var steps = transition_time / 50;
 
             // calculate difference between new and old values
             diff = Math.abs(old_values[channel - 1] -  new_value);
